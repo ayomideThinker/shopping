@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} |Home_page {% endblock title %}
+
+{% block header1 %}  {% include 'header1.html' %}   {% endblock header1 %}
+
+
+{% block header %}  {% include 'header.html' %}   {% endblock header %}
+
+
+{% block carousel %}   {% include 'carousel.html' %}  {% endblock carousel %}
+
+
+
+{% block content %}
+
+
+
+{% if searched_items %}
+  
+
+  <div class="container-fluid bg-light mt-5">
+    <h2 class="produ text-center pt-4 pb-3">Product</h2>
+    <div class="row justify-content-center gy-3">
+
+      
+      {% if searched_items %}   
+            {% for items in searched_items %}
+            <div class="col-10 col-sm-10 col-md-3">
+              <div class="card w-100 h-75">
+                  <img src="{{items.img.url}}" class="card-img-top h-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{items.title}}</h5>
+                   
+                    <p class="card-text">{{items.description}}</p>
+                    <p class="card-text">{{items.brand}}</p>
+                    
+                    <h5 class="card-title">{{items.price}}</h5>
+
+                    {% if items.max_quantity < 1 %}
+                       <p class="card-text">Out of stock</p>
+                    {% else %}
+                       <a href="{% url 'details' items.slug %}" class="btn btn-primary">Order Now</a>
+                    {% endif %}  
+                  </div>
+                </div>
+            </div>
+            {% endfor %}
+      {% endif %}
+        
+    </div>
+  </div>
+
+
+{% else %}
+
+  <h2 class="text-center mt-5 mb-3">You serched for {{items}}, and it was not found!</h2>
+
+
+{% endif %}
+
+
+
+
+
+
+{% endblock content %}
+
+
+{% block contact %}   {% include 'contact.html' %}   {% endblock contact %}
+
+
+{% block footer %}   {% include 'footer.html' %}   {% endblock footer %}
+

@@ -1,0 +1,789 @@
+
+/* .carousel-indicators button{
+    width: 2rem;
+    height: 5rem;
+    background-color: orangered;
+} */
+
+:root{
+    --body--: rgb(255, 255, 255);
+    --text-color: rgb(107, 103, 103);
+}
+.dark{
+    --body--: rgb(133, 127, 127);
+    --text-color: white;
+}
+
+body{
+    background-color: var(--body--);
+}
+
+.fa-moon{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.fa-sun{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+
+}
+
+
+
+.carousel-indicators button{
+    border: none;
+    outline: none;
+    color: orangered;
+    background-color: orangered;
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+}
+.carousel-indicators button:hover{
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: orangered;
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+}
+.navbar{
+    /* padding: 1rem; */
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    margin-top: o;
+    overflow: hidden;
+    width: 100%;
+    background-image: url(/img/bg.png);
+    /* opacity: 0; */
+    /* height: 4rem; */
+}
+
+/* .lop span{
+    color: orangered;
+    font-size: 1rem;
+} */
+.carousel-control-prev{
+    font-size: 1px;
+}
+.carousel-control-prev:hover{
+    font-size: 3rem;
+    color: orangered;
+    transition: 0.8s ease;
+}
+.carousel-control-next{
+    font-size: 1px;
+}
+.carousel-control-next:hover{
+    font-size: 3rem;
+    color: orangered;
+    transition: 0.8s ease;
+
+}
+.navbar a{
+    color: white;
+    font-size: 0.9rem;
+    /* margin-right: 1.6rem; */
+    font-weight: 500;
+    padding-right: 0.9rem;
+}
+
+.home{
+    color: orangered;
+    
+}
+
+.middle img{
+    color: black;
+}
+
+.home::after{
+    content: "";
+    display: block;
+    background-color: orangered;
+    height: 2px;
+    width: 4rem;
+    margin-top: 10px;
+    color: orangered;
+    
+
+}
+
+.navbar a:hover{
+    color: orangered;
+}
+.navbar li a:hover::after{
+    content: "";
+    display: block;
+    background-color: orangered;
+    height: 1px;
+    width: 4rem;
+    margin-top: 5px;
+    color: orangered;
+    font-size: 0.9rem;
+    /* margin-right: 1.6rem; */
+    font-weight: 500;
+    padding-right: 0.7rem;
+}
+
+/* .navbar a: */
+
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+.lastfooter .bro{
+    color: black;
+    height: 1px;
+    background-color: black;
+}
+
+
+.navbar .navbar-brand{
+    margin-left: 15rem;
+}
+
+.navbar img{
+    width: 9.5rem;
+
+}
+
+.carousel-caption p{
+    /* font-style: italic; */
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.footer2 p{
+    font-size: small;
+}
+
+.pli{
+    font-size: 1px;
+    opacity: 1;
+}
+.pli:hover{
+    font-size: 2rem;
+}
+
+.carousel-caption{
+    margin-bottom: 9rem;
+}
+
+.carousel-indicators{
+    border: none;
+    outline: none;
+    margin-bottom: 7rem;
+}
+
+/* .mangoro{
+    /* padding-top: 1rem; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+
+} */ 
+
+.carousel-inner{
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+}
+
+
+
+/* .carousel{
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+} */
+.footerside{
+    background-color: #1a2024;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    color: white;
+    padding-bottom: 1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+.footerside ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+.footerside ul li:hover,
+.footerside .list-inline a:hover{
+    color: orangered;
+    text-decoration: none;
+    font-size: small;
+    transform: translateX(5px);
+    transition: ease 0.8s;
+}
+
+.footerside .pol::after{
+    content: "";
+    display: block;
+    background-color: orangered;
+    height: 3px;
+    width: 2.5rem;
+    margin-top: 10px;
+}
+
+
+
+
+.footerside ul li i{
+    /* padding-right: 1px; */
+    font-size: 0.5rem;
+    padding-bottom: 0.6rem;
+    padding-right: 0.3rem;
+}
+
+.formi ul li a i{
+    background-color:#1a2024;
+    padding: 0.2rem;
+    border-radius: 10rem;
+    width: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    padding-right: 1rem;
+}
+.formi ul li a:hover{
+    background-color: orangered;
+    border: none;
+    outline: none;
+    padding: 0.2rem;
+    border-radius: 10rem;
+    width: 1rem;
+    color: #1a2024;
+    font-size: 0.9rem
+}
+
+.formu ul li i{
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+}
+
+.footerside h4{
+    font-weight: 300;
+    font-size: larger;
+    
+}
+
+.footerside h4 span{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+
+footer p{
+    background-color: #1a2024;
+    /* padding: 5px; */
+    width: 100%;
+    font-size: smaller;
+    padding: 2px;
+}
+
+.empty{
+    width: 100%;
+    color: black;
+    background-color: black;
+}
+
+.partners h4 .pio::after{
+    content: "";
+    display: block;
+    background-color: orangered;
+    height: 3px;
+    width: 2.5rem;
+    margin-top: 10px;
+}
+
+br{
+    background-color: black;
+}
+
+.middle{
+    background-color: rgba(16, 15, 15, 0.148);
+    padding: 3rem;
+    /* padding-top: 3rem; */
+    clip-path: polygon(0 7%, 100% 0%, 100% 93%, 0 100%);
+}
+
+.secondhover img{
+    color: black;
+}
+
+.secondhover img:hover{
+    color: orangered;
+}
+
+
+/* .secondhover h4:hover{
+    color: orangered;
+} */
+
+.secondhover:hover h4{
+    color: orangered;
+    transition: 0.6s ease;
+
+}
+
+.secondhover a{
+    color: black;
+}
+
+/* .secondhover a:hover{
+    color: orangered;
+} */
+
+
+.secondhover:hover a{
+    color: orangered;
+    transition: 0.6s ease;
+
+}
+
+.middle .for{
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.middle a{
+    text-decoration: none;
+    font-size: o.8rem;
+
+}
+
+.middle h3{
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.middle h3::after{
+    margin: auto;
+    margin-top: 12px;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 4.5rem;
+    border-radius: 1%;
+    background-color: orangered;
+    transform: translateX(10px);
+}
+
+.middle img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.middle h4{
+    font-size: large;
+    padding-top: 0.7rem;
+}
+
+.middle p{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.middle span{
+    font-weight: 500;
+    color: orangered;
+}
+
+
+.pio::after{
+    margin: auto;
+    margin-top: 12px;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 5rem;
+    border-radius: 1%;
+    background-color: orangered;
+    transform: translateX(10px);
+}
+
+.partners h2{
+    font-weight: 300;
+}
+
+.partners span{
+    font-weight: 500;
+    color: orangered;
+}
+
+/* .partners img{
+    width: auto;
+    height: auto;
+    margin-left: 6rem;
+} */
+
+.welcome{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.welcome h2{
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.welcome h2::after{
+    margin: auto;
+    margin-top: 12px;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 5rem;
+    border-radius: 1%;
+    background-color: orangered;
+    transform: translateX(10px);
+   
+}
+
+.welcome span{
+    font-weight: 500;
+    font-size: 2rem;
+    color: orangered;
+}
+
+.welcome .btn{
+    border-radius: 2rem;
+    padding: 0.8rem;
+    width: 9rem;
+    border: none;
+    outline: none;
+}
+.welcome .btn:hover{
+    border-radius: 2rem;
+    padding: 0.8rem;
+    width: 9rem;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    /* transform: translateX(10px); */
+    transition: ease 1s;
+}
+
+.first{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.second{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+.first p{
+    font-size: 0.8rem;
+    font-weight: 500;
+
+}
+.second p{
+    font-size: 0.8rem;
+    font-weight: 500;
+
+}
+
+
+
+
+.first .btn{
+    border-radius: 2rem;
+    padding: 0.8rem;
+    width: 9rem;
+    border: none;
+    outline: none;
+}
+.second .btn{
+    border-radius: 2rem;
+    padding: 0.8rem;
+    width: 9rem;
+    border: none;
+    outline: none;
+}
+/* .secondwelcome .btn:hover{
+    border-radius: 2rem;
+    padding: 0.8rem;
+    width: 9rem;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    transform: translateX(4px);
+    transition: ease 1s;
+} */
+
+.first:hover img{
+    background-color: orangered;
+    transition: ease 1s;
+    transform: rotate(360deg);
+}
+.second:hover img{
+    background-color: orangered;
+    transition: ease 1s;
+    transform: rotate(360deg);
+}
+.first:hover .btn{
+    border-radius: 2rem;
+    padding: 0.8rem;
+    width: 9rem;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    transform: translateX(4px);
+    transition: ease 1s;
+}
+.second:hover .btn{
+    border-radius: 2rem;
+    padding: 0.8rem;
+    width: 9rem;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    transform: translateX(4px);
+    transition: ease 1s;
+}
+
+.first:hover h4{
+    color: orangered;
+}
+.second:hover h4{
+    color: orangered;
+}
+
+.first img{
+    background-color: rgba(0, 0, 0, 0.878);
+    
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.second img{
+    background-color: rgba(0, 0, 0, 0.878);
+    
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+/* .secondwelcome img:hover{
+    
+    background-color: orangered;
+    transition: ease 1s;
+    transform: rotate(360deg);
+
+} */
+
+.kop p{
+    background-color: aliceblue;
+    width: 100%;
+    height: 1px;
+}
+
+/* .secondwelcome h4:hover{
+    color: orangered;
+} */
+
+.footerside .new li p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.border-top{
+    width: 100%;
+}
+
+
+.footer2 p{
+    padding-top: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+
+/*@media(max-width:1400px){} xl
+@media(max-width:1200px){} lg
+@media(max-width:991.95px){} md
+@media(max-width:767.68px){} sm
+@media(max-width:575.68px){} xs */
+
+
+@media(max-width:1400px){
+    .middle{
+        padding-top: 9rem;
+    }
+    .navbar .navbar-brand{
+        margin-left: 15rem;
+    }
+
+}
+
+@media(max-width:1200px){
+    .middle{
+        padding-top: 9rem;
+    }
+    
+}
+
+@media(max-width:575.68px){
+    .navbar .navbar-brand{
+        margin-left: 1rem;
+    }
+
+    .navbar{
+        /* padding: 1rem; */
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        margin-top: o;
+        overflow: hidden;
+        width: 100%;
+        background-image: url(/img/bg.png);
+        /* opacity: 0; */
+        /* height: 4rem; */
+    }
+    
+
+    .footer2{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        /* padding-bottom: rem; */
+
+    }
+
+    .secondhover{
+        text-align: center;
+        align-items: center;
+    }
+    .Toggle{
+        color: orangered;
+        border: none;
+        outline: none;
+    }
+    .boss{
+        font-size: 1em;
+        color: orangered;
+    }
+
+    .nav-item{
+        background-color: white;
+        width: 100%;
+        /* color: white; */
+    }
+    .nav-item a{
+        border: none;
+        outline: none;
+        width: 100%;
+        color: black;
+        font-size: 0.9rem;
+    }
+    .nav-item a:hover{
+        border: none;
+        outline: none;
+        background-color: orangered;
+        color: white;
+    }
+
+    .home{
+        background-color: orangered;
+        color: white;
+        padding: 0;
+    }
+    .home:hover{
+        background-color: orangered;
+        color: white;
+        padding: 0;
+    }
+
+    .carousel-indicators{
+        margin-bottom: 1rem;
+        color: white;
+    }
+    
+    /* .carousel-caption{
+        padding-bottom: 2rem;
+    } */
+
+    .carousel-caption h2{
+        font-size: small;
+    }
+    .carousel-caption p{
+        font-size: small;
+    }
+
+    .middle{
+        padding-top: 7rem;
+        padding-bottom: 7em;
+    }
+
+    .second{
+        margin-top: 2rem;
+    }
+
+    .navbar img{
+        width: 8rem;
+        /* align-content: start; */
+    }
+    /* .welcome{
+        padding: 0.2rem;
+    } */
+    .welcome h2{
+        font-weight: 300;
+        font-size: large;
+    }
+    .welcome h2 span{
+        font-weight: 500;
+        font-size: large;
+    }
+    .welcome a{
+        font-size: 1rem;
+    }
+    .welcome p{
+        font-weight: 500;
+    }
+    .welcome .btn{
+        width: 7rem;
+        height: 3rem;
+    }
+    .welcome .btn:hover{
+        width: 7rem;
+        height: 3rem;
+        background-color: orangered;
+    }
+    
+    .footer2{
+        width: 100%;
+    }
+    /* .secondwelcome{
+        padding: 0.2rem;
+    } */
+    .secondwelcome h4{
+        font-size: 0.9rem;
+        padding-top: 1rem;
+
+    }
+    .secondwelcome a{
+        font-size: 1rem;
+    }
+    .secondwelcome .btn{
+        width: 8.5rem;
+        height: 3rem;
+    }
+    .secondwelcome .btn:hover{
+        width: 8.5rem;
+        height: 3rem;
+    }
+    .lop i{
+    color: orangered;
+    font-size: 1rem;
+}
+}

@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} |Home_page {% endblock title %}
+
+{% block header1 %}  {% include 'header1.html' %}   {% endblock header1 %}
+
+
+{% block header %}  {% include 'header.html' %}   {% endblock header %}
+
+
+{% block carousel %}   {% include 'carousel.html' %}  {% endblock carousel %}
+
+
+
+{% block content %}
+
+<div class="container-fluid" id="about">
+    <h2 class="text-center prod mt-5">Welcome to ShoesByEliteDev</h2>
+    <div class="row justify-content-center">
+        <div class="col-10 col-md-5">
+            <img src="{% static '' %}img/usama-akram-g3CMh2nqj_w-unsplash.jpg" class="h-100 w-100" alt="">
+        </div>
+        <div class="col-10 col-md-5">
+            <div class="w-100">
+                <h2>What We Stand for</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis impedit 
+                    necessitatibus quaerat consequuntur, quidem, esse cupiditate quam autem,
+                     eos eaque soluta quae recusandae aperiam nostrum unde odio?
+                     Maxime vel incidunt reiciendis voluptates quisquam quos. Nam 
+                     facere aspernatur molestias minus nemo!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde eos
+                     vitae provident, quo labore cumque ipsam odit ullam error magni.
+                      Voluptatum ratione debitis nulla. Totam, temporibus ut! Laudantium
+                       quos illum id earum voluptatibus nisi doloremque praesentium quas totam impedit
+                     amet explicabo expedita consequatur quod, veniam quo eum iure dignissimos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde eos
+                     vitae provident, quo labore cumque ipsam odit ullam error magni.
+                      Voluptatum ratione debitis nulla. Totam, temporibus ut! Laudantium
+                       quos illum id earum voluptatibus nisi doloremque praesentium quas totam impedit
+                     amet explicabo expedita consequatur quod, veniam quo eum iure dignissimos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde eos
+                     vitae provident, quo labore cumque ipsam odit ullam error magni.
+                      Voluptatum ratione debitis nulla. Totam, temporibus ut! Laudantium
+                       quos illum id earum voluptatibus nisi doloremque praesentium quas totam impedit
+                     amet explicabo expedita consequatur quod, veniam quo eum iure dignissimos.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-light mt-4">
+    <h2 class="produ text-center">Our Categories</h2>
+    <div class="row justify-content-center gy-3">
+
+      
+      {% if category %}   
+            {% for items in category %}
+            <div class="col-10 col-sm-10 col-md-4">
+              <div class="card h-75">
+                  <img src="{{items.img.url}}" class="card-img-top h-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{items.title}}</h5>
+                    <p class="card-text">{{items.description}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+            </div>
+            {% endfor %}
+      {% endif %}
+      
+        
+
+
+
+        
+    </div>
+  </div>
+
+  <div class="container-fluid" id="services">
+    <div class="cave">
+        <h2 class="mb-3 mt-2 produ text-center">Our Services</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, earum! Ipsam amet,
+             quasi sequi debitis voluptas nostrum corrupti ab quod?</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aut?</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aut?</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aut?</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aut?</p>
+    </div>
+  </div>
+
+
+
+
+{% endblock content %}
+
+
+{% block contact %}   {% include 'contact.html' %}   {% endblock contact %}
+
+
+{% block footer %}   {% include 'footer.html' %}   {% endblock footer %}
+
